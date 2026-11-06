@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Энергияны үнемдеу – Қазақстанның болашағы үшін саналы таңдау · 9-сынып</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700;800&family=Noto+Serif:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#14213d;--muted:#5b6782;--bg:#f3f7f4;--card:#ffffffee;--line:#dbe6df;--deep:#0f2a3d;--teal:#0f7c72;--teal2:#dff3ee;--sun:#f4b400;--sun2:#fff4d1;--leaf:#2e9a57;--leaf2:#e3f5e8;--red:#c8472f;--red2:#fde6e0;--sky:#2b6cb0;--sky2:#e4effb;--r:18px}
+*{box-sizing:border-box}html,body{margin:0}
+body{font-family:'Noto Sans',system-ui,sans-serif;color:var(--ink);line-height:1.58;font-size:16px;
+background:radial-gradient(1100px 600px at 105% -10%,#fff1c4 0%,transparent 60%),radial-gradient(900px 600px at -10% 110%,#cdeee4 0%,transparent 60%),linear-gradient(165deg,#f7fbf8 0%,#eef6f2 55%,#f6f3e8 100%);background-attachment:fixed}
+a{color:var(--teal)}
+.app{display:grid;grid-template-columns:290px 1fr;min-height:100vh}
+aside{position:sticky;top:0;height:100vh;overflow:auto;padding:20px 14px;color:#eaf4f1;
+background:radial-gradient(400px 300px at 10% 0%,rgba(244,180,0,.22),transparent 70%),linear-gradient(175deg,#0f2a3d 0%,#123f4a 55%,#0f6a5f 100%);box-shadow:4px 0 24px rgba(10,30,40,.2)}
+.brand{display:flex;gap:10px;align-items:center;margin:2px 6px 14px}
+.bolt{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;background:linear-gradient(135deg,#ffd451,#f49b00);box-shadow:0 6px 18px rgba(244,180,0,.4)}
+.brand b{font-family:'Noto Serif',serif;font-size:17px;line-height:1.2;color:#ffe08a;display:block}
+.brand small{font-size:12px;opacity:.8}
+.nav a{display:flex;gap:10px;align-items:center;padding:9px 10px;border-radius:12px;color:#e2eeea;text-decoration:none;font-size:14.5px;margin:2px 0;transition:.15s}
+.nav a:hover{background:rgba(255,255,255,.09);transform:translateX(2px)}
+.nav a.on{background:linear-gradient(90deg,#ffd451,#f4b400);color:#1d1600;font-weight:700}
+.nav .ic{width:26px;text-align:center;font-size:17px}
+.mo{font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:#ffe08a;opacity:.85;margin:14px 10px 4px}
+.timer{margin:16px 6px 0;padding:12px;border-radius:14px;background:rgba(255,255,255,.08);font-size:13px}
+.timer .t{font-size:28px;font-weight:800;color:#ffe08a;font-variant-numeric:tabular-nums}
+.timer button{margin:6px 4px 0 0;border:0;border-radius:9px;padding:6px 10px;font-weight:700;cursor:pointer;background:#ffe08a;color:#1d1600}
+main{padding:26px 34px 60px;max-width:1120px}
+.burger{display:none}
+.view{display:none;animation:fade .3s}.view.on{display:block}
+@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1}}
+.hero{position:relative;overflow:hidden;border-radius:26px;padding:34px 36px;color:#fff;
+background:radial-gradient(500px 300px at 92% 10%,rgba(255,212,81,.55),transparent 70%),linear-gradient(130deg,#0f2a3d 0%,#0f5f63 55%,#2e9a57 100%);box-shadow:0 18px 40px rgba(15,60,70,.25)}
+.hero h1{font-family:'Noto Serif',serif;font-size:34px;line-height:1.2;margin:8px 0 10px;max-width:760px}
+.hero .chips span{display:inline-block;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.25);padding:4px 12px;border-radius:99px;font-size:13px;margin:0 6px 6px 0}
+.hero .q{margin-top:14px;font-style:italic;opacity:.95}
+.sunsvg{position:absolute;right:-30px;bottom:-40px;opacity:.25;width:260px}
+h2{font-family:'Noto Serif',serif;font-size:25px;margin:26px 0 12px}
+h3{margin:4px 0 8px;font-size:18px}
+.grid{display:grid;gap:16px}.g2{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:18px 20px;box-shadow:0 6px 20px rgba(20,50,40,.06)}
+.card.sun{background:linear-gradient(160deg,#fffaf0,#fff4d1);border-color:#f3dc95}
+.card.leaf{background:linear-gradient(160deg,#f6fcf8,#e3f5e8);border-color:#bfe3cb}
+.card.sky{background:linear-gradient(160deg,#f6faff,#e4effb);border-color:#c3d8f1}
+.card.red{background:linear-gradient(160deg,#fff8f6,#fde6e0);border-color:#f2c3b7}
+.tag{display:inline-block;font-size:12px;font-weight:700;padding:3px 10px;border-radius:99px;background:var(--teal2);color:var(--teal);margin-bottom:8px}
+.tag.y{background:var(--sun2);color:#8a6200}.tag.r{background:var(--red2);color:var(--red)}.tag.g{background:var(--leaf2);color:var(--leaf)}.tag.b{background:var(--sky2);color:var(--sky)}
+ul.tidy{margin:6px 0 0;padding-left:20px}ul.tidy li{margin:4px 0}
+.stat{font-size:34px;font-weight:800;color:var(--teal);line-height:1}
+.stat small{font-size:14px;color:var(--muted);font-weight:600}
+.route{display:flex;flex-wrap:wrap;gap:8px}
+.route a{flex:1 1 150px;text-decoration:none;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px;font-weight:700;font-size:14px;transition:.15s}
+.route a:hover{border-color:var(--sun);transform:translateY(-2px);box-shadow:0 8px 18px rgba(244,180,0,.18)}
+.route a span{display:block;font-size:12px;color:var(--muted);font-weight:600}
+.btn{border:0;border-radius:12px;padding:10px 16px;font-weight:700;cursor:pointer;background:var(--teal);color:#fff;font-size:14.5px;font-family:inherit}
+.btn.y{background:linear-gradient(90deg,#ffd451,#f4b400);color:#1d1600}.btn.ghost{background:#fff;color:var(--teal);border:1.5px solid var(--teal)}
+.btn:hover{filter:brightness(1.05)}
+.opt{display:block;width:100%;text-align:left;margin:7px 0;padding:11px 14px;border-radius:12px;border:1.5px solid var(--line);background:#fff;cursor:pointer;font:inherit}
+.opt:hover{border-color:var(--teal)}.opt.ok{background:var(--leaf2);border-color:var(--leaf)}.opt.no{background:var(--red2);border-color:var(--red)}
+.progress{height:8px;background:#e6eee9;border-radius:9px;overflow:hidden;margin:6px 0 12px}.progress i{display:block;height:100%;background:linear-gradient(90deg,#2e9a57,#f4b400);transition:.3s}
+.bins{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:12px}
+.bin{min-height:120px;border-radius:16px;padding:12px;border:2px dashed}
+.bin.s{border-color:var(--leaf);background:var(--leaf2)}.bin.w{border-color:var(--red);background:var(--red2)}
+.chip{display:inline-block;margin:4px;padding:8px 12px;border-radius:99px;background:#fff;border:1.5px solid var(--line);font-size:14px;cursor:pointer;user-select:none}
+.chip.sel{border-color:var(--sun);box-shadow:0 0 0 3px #fff0b8}
+.chip.ok{border-color:var(--leaf)}.chip.no{border-color:var(--red);background:#fff3f0}
+.numcard{border-radius:18px;padding:16px;text-align:center;color:#fff;box-shadow:0 8px 18px rgba(0,0,0,.12)}
+.numcard b{display:block;font-size:34px;line-height:1.1}
+.numcard span{font-size:13.5px}
+.n101{background:linear-gradient(135deg,#e2552f,#b73a1d)}.n102{background:linear-gradient(135deg,#2b6cb0,#1b4a85)}.n103{background:linear-gradient(135deg,#d93a5b,#a8213d)}.n104{background:linear-gradient(135deg,#f49b00,#c97400)}.n112{background:linear-gradient(135deg,#0f7c72,#0b5850)}.n111{background:linear-gradient(135deg,#7a4fc2,#56349a)}.n150{background:linear-gradient(135deg,#2e9a57,#1e6f3d)}
+.algo{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;counter-reset:a}
+.algo div{background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px;position:relative;padding-top:34px}
+.algo div:before{counter-increment:a;content:counter(a);position:absolute;top:8px;left:12px;width:22px;height:22px;border-radius:50%;background:var(--sun);color:#1d1600;font-weight:800;font-size:13px;display:grid;place-items:center}
+.reveal{margin-top:8px;display:none;background:var(--leaf2);border-radius:10px;padding:10px 12px;font-size:14.5px}
+.reveal.on{display:block}
+.calc label{font-size:13px;color:var(--muted);font-weight:600;display:block;margin:6px 0 3px}
+.calc select,.calc input{width:100%;padding:9px 10px;border-radius:10px;border:1.5px solid var(--line);font:inherit;background:#fff}
+.out{margin-top:12px;padding:14px;border-radius:14px;background:var(--deep);color:#fff}
+.out b{color:#ffe08a;font-size:22px}
+table.k{width:100%;border-collapse:collapse;font-size:14px;background:#fff}
+table.k td,table.k th{border:1px solid #c9d6ce;padding:8px 9px;vertical-align:top;text-align:left}
+table.k th{background:#dff3ee}
+table.k td.l{background:#f1f8f5;font-weight:700;width:24%}
+.mood{display:flex;gap:10px;flex-wrap:wrap}
+.mood button{flex:1 1 120px;border:2px solid var(--line);background:#fff;border-radius:16px;padding:12px 8px;cursor:pointer;font:inherit;font-weight:700}
+.mood button.on{border-color:var(--sun);background:var(--sun2)}
+.bat{height:34px;border:3px solid currentColor;border-radius:8px;position:relative;margin:0 auto 6px;width:66px}
+.bat:after{content:"";position:absolute;right:-8px;top:8px;width:5px;height:12px;background:currentColor;border-radius:0 3px 3px 0}
+.bat i{position:absolute;left:3px;top:3px;bottom:3px;border-radius:3px}
+textarea{width:100%;min-height:80px;border-radius:12px;border:1.5px solid var(--line);padding:10px;font:inherit}
+.note{font-size:13px;color:var(--muted)}
+.vids a{display:flex;gap:12px;align-items:center;text-decoration:none;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px;margin:8px 0}
+.vids a:hover{border-color:var(--red)}
+.vids .pl{width:42px;height:42px;border-radius:12px;background:#e62117;color:#fff;display:grid;place-items:center;flex:0 0 42px;font-size:18px}
+.score{font-weight:800;color:var(--teal)}
+footer{margin-top:40px;font-size:12.5px;color:var(--muted);text-align:center}
+@media(max-width:900px){.app{grid-template-columns:1fr}aside{position:fixed;z-index:20;left:-300px;width:290px;transition:.25s}aside.open{left:0}
+.burger{display:inline-block;position:sticky;top:10px;z-index:10;margin-bottom:10px}main{padding:16px}
+.g2,.g3,.g4,.algo{grid-template-columns:1fr}.hero h1{font-size:25px}.hero{padding:24px}}
+@media print{aside,.burger,.noprint{display:none!important}.app{display:block}.view{display:none!important}#qmzh{display:block!important}body{background:#fff}}
+</style>
+</head>
+<body>
+<div class="app">
+<aside id="side">
+  <div class="brand"><div class="bolt"><svg width="24" height="24" viewBox="0 0 24 24"><path d="M13 2 4 14h6l-1 8 9-12h-6z" fill="#1d1600"/></svg></div>
+  <div><b>Энергия – болашақ</b><small>9-сынып · Тәрбие сағаты · 16.11.2026</small></div></div>
+  <nav class="nav" id="nav">
+    <div class="mo">Сабақ маршруты</div>
+    <a href="#home"><span class="ic">🏠</span>Басты бет</a>
+    <a href="#start"><span class="ic">💡</span>Ой қозғау</a>
+    <a href="#know"><span class="ic">📚</span>Білім қоржыны</a>
+    <a href="#arena"><span class="ic">🧠</span>Зияткерлік алаң</a>
+    <a href="#tasks"><span class="ic">🛠️</span>3 тапсырма</a>
+    <a href="#games"><span class="ic">🎮</span>Онлайн ойындар</a>
+    <a href="#safety"><span class="ic">🆘</span>Қауіпсіздік сабағы</a>
+    <a href="#reflect"><span class="ic">🔋</span>Рефлексия</a>
+    <a href="#hw"><span class="ic">🏡</span>Үй тапсырмасы</a>
+    <a href="#ebbk"><span class="ic">🤝</span>ЕББҚ оқушысы</a>
+    <div class="mo">Мұғалімге</div>
+    <a href="#qmzh"><span class="ic">📄</span>ҚМЖ</a>
+  </nav>
+  <div class="timer"><div>Кезең таймері</div><div class="t" id="tt">05:00</div>
+    <button data-m="5">5′</button><button data-m="10">10′</button><button data-m="3">3′</button><button id="tgo">▶ / ⏸</button></div>
+</aside>
+<main>
+<button class="btn y burger" onclick="document.getElementById('side').classList.toggle('open')">☰ Мәзір</button>
+
+<!-- HOME -->
+<section class="view" id="v-home">
+  <div class="hero">
+    <svg class="sunsvg" viewBox="0 0 200 200"><circle cx="100" cy="100" r="46" fill="#ffd451"/><g stroke="#ffd451" stroke-width="10" stroke-linecap="round"><path d="M100 20v22M100 158v22M20 100h22M158 100h22M43 43l16 16M141 141l16 16M43 157l16-16M141 59l16-16"/></g></svg>
+    <div class="chips"><span>⚡ 9-сынып</span><span>📅 16.11.2026</span><span>🏷️ Құндылық: Әділдік және жауапкершілік</span><span>🕒 45 минут</span></div>
+    <h1>Энергияны үнемдеу – Қазақстанның болашағы үшін саналы таңдау</h1>
+    <div>Қауіпсіздік сабағы (10 минут): <b>«Қазақстандағы сенім телефондарының және шұғыл қызметтердің нөмірлері»</b></div>
+    <div class="q">«Тамшыдан теңіз құралады» (мақал)</div>
+  </div>
+  <div class="grid g2" style="margin-top:18px">
+    <div class="card"><span class="tag">🎯 Мақсаты</span>
+      <p style="margin:0">Оқушылардың энергияны тиімді пайдалану мәдениетін және оның Қазақстанның болашағы үшін саналы таңдау екенін түсінуін қалыптастыру; табиғатқа жанашырлық, жауапкершілік және ұқыптылық сезімдерін дамыту; экологиялық қауіпсіз өмір салтын ұстануға тәрбиелеу.</p></div>
+    <div class="card sun"><span class="tag y">✅ Күтілетін нәтиже</span>
+      <ul class="tidy"><li><b>Біледі:</b> энергия көздерін, Қазақстандағы энергетиканың ахуалын, шұғыл қызмет нөмірлерін.</li>
+      <li><b>Түсінеді:</b> әр үнемделген киловатт – табиғатқа, отбасы бюджетіне және ел болашағына қосылған үлес екенін.</li>
+      <li><b>Қолданады:</b> құрылғылардың шығынын есептеп, үйде/мектепте нақты үнемдеу жоспарын құрады; қауіпті жағдайда тиісті қызметке сауатты хабарласады.</li></ul></div>
+  </div>
+  <h2>Сабақ маршруты</h2>
+  <div class="route">
+    <a href="#start">1. Ой қозғау<span>Басы · 5 мин</span></a>
+    <a href="#know">2. Білім қоржыны<span>Ортасы · 6 мин</span></a>
+    <a href="#arena">3. Зияткерлік алаң<span>Ортасы · 6 мин</span></a>
+    <a href="#tasks">4. 3 тапсырма<span>Ортасы · 10 мин · 2 топ</span></a>
+    <a href="#safety">5. Қауіпсіздік<span>10 мин</span></a>
+    <a href="#reflect">6. Рефлексия + үй тапсырмасы<span>Соңы · 8 мин</span></a>
+  </div>
+  <div class="card leaf" style="margin-top:16px"><b>💬 Апта ойы:</b> 11 қараша – Халықаралық энергия үнемдеу күні. Бүгінгі сабақ – осы күннің жалғасы: «Мен не істей аламын?» деген сұраққа нақты жауап табамыз.</div>
+</section>
+
+<!-- START -->
+<section class="view" id="v-start">
+  <h2>💡 Ой қозғау: «Бір шамның құны»</h2>
+  <div class="grid g2">
+    <div class="card sun"><span class="tag y">Проблемалық сұрақ</span>
+      <h3>Бір шамды бір сағатқа сөндірсем – не өзгереді?</h3>
+      <p>Бір ғана 60 Вт шам – түк емес сияқты. Ал Қазақстандағы <b>1 миллион</b> отбасы күн сайын бір шамды бір сағатқа ғана артық жақпаса ше?</p>
+      <button class="btn y" onclick="document.getElementById('r0').classList.add('on')">Есептеп көрейік ⚡</button>
+      <div class="reveal" id="r0">1 000 000 × 0,06 кВт × 1 сағ = <b>60 000 кВт·сағ – бір күнде</b>.<br>Бір жылда: 60 000 × 365 ≈ <b>21,9 млн кВт·сағ</b>. Бұл – мыңдаған үйдің бір жылдық жарығы. Шешім – әрқайсымыздың қолымызда!</div>
+    </div>
+    <div class="card"><span class="tag">🌀 Психологиялық ахуал</span>
+      <h3>«Энергия тізбегі»</h3>
+      <p>Оқушылар шеңбер жасап, қол ұстасады. Мұғалім бір оқушының алақанын қысады – «ток» шеңбер бойымен жүреді. Әр оқушы «токты» өткізгенде энергияны қай жерде үнемдейтінін бір сөзбен айтады: <i>«жарық», «су», «зарядтағыш»...</i></p>
+      <p class="note">Мақсаты: топтың бірлігін сезіну – энергия да біріге үнемделеді.</p>
+    </div>
+  </div>
+  <h2>🎬 Кіріспе бейне (2–3 минут)</h2>
+  <div class="vids card">
+    <a href="https://www.youtube.com/results?search_query=%D1%8D%D0%BD%D0%B5%D1%80%D0%B3%D0%B8%D1%8F+%D2%AF%D0%BD%D0%B5%D0%BC%D0%B4%D0%B5%D1%83+%D2%9B%D0%B0%D0%B7%D0%B0%D2%9B%D1%88%D0%B0" target="_blank" rel="noopener"><span class="pl">▶</span><span><b>Энергияны үнемдеу (қазақша бейнематериалдар)</b><br><span class="note">YouTube іздеуі – сабаққа ыңғайлысын таңдаңыз</span></span></a>
+    <a href="https://www.youtube.com/results?search_query=%D0%B6%D0%B0%D2%A3%D0%B0%D1%80%D1%82%D1%8B%D0%BB%D0%B0%D1%82%D1%8B%D0%BD+%D1%8D%D0%BD%D0%B5%D1%80%D0%B3%D0%B8%D1%8F+%D0%BA%D3%A9%D0%B7%D0%B4%D0%B5%D1%80%D1%96+%D2%9A%D0%B0%D0%B7%D0%B0%D2%9B%D1%81%D1%82%D0%B0%D0%BD" target="_blank" rel="noopener"><span class="pl">▶</span><span><b>Жаңартылатын энергия көздері Қазақстанда</b><br><span class="note">Күн, жел, су станциялары туралы</span></span></a>
+    <a href="https://www.youtube.com/results?search_query=%D0%A5%D0%B0%D0%BB%D1%8B%D2%9B%D0%B0%D1%80%D0%B0%D0%BB%D1%8B%D2%9B+%D1%8D%D0%BD%D0%B5%D1%80%D0%B3%D0%B8%D1%8F+%D2%AF%D0%BD%D0%B5%D0%BC%D0%B4%D0%B5%D1%83+%D0%BA%D2%AF%D0%BD%D1%96" target="_blank" rel="noopener"><span class="pl">▶</span><span><b>11 қараша – Халықаралық энергия үнемдеу күні</b><br><span class="note">Қысқа сюжеттер</span></span></a>
+  </div>
+</section>
+
+<!-- KNOW -->
+<section class="view" id="v-know">
+  <h2>📚 Білім қоржыны</h2>
+  <div class="grid g4">
+    <div class="card sun"><div class="stat">≈ ⅔</div><small class="note">Қазақстандағы электр энергиясының басым бөлігі көмірден өндіріледі</small></div>
+    <div class="card leaf"><div class="stat">7%</div><small class="note">2025 жылы жаңартылатын энергия көздерінің (ЖЭК) өндірістегі үлесі</small></div>
+    <div class="card sky"><div class="stat">15%</div><small class="note">2030 жылға қарай ЖЭК үлесін жеткізу мақсаты</small></div>
+    <div class="card"><div class="stat">2060</div><small class="note">Қазақстанның көміртегі бейтараптығына жету мақсаты</small></div>
+  </div>
+  <div class="grid g2" style="margin-top:16px">
+    <div class="card"><span class="tag">⚡ Энергия көздері</span>
+      <ul class="tidy"><li><b>Дәстүрлі (таусылатын):</b> көмір, мұнай, газ, уран. Жаққанда ауаға CO₂ және зиянды заттар шығады.</li>
+      <li><b>Жаңартылатын:</b> күн, жел, су, биомасса. Табиғатта қайта қалпына келеді, ауаны аз ластайды.</li>
+      <li>Қазақстанның оңтүстігінде жылына 2–3 мың сағатқа дейін күн шуақты болады, ал Жоңғар қақпасы мен Ерейментау – жел энергиясына бай аймақтар.</li></ul></div>
+    <div class="card"><span class="tag g">🌿 Неге үнемдеу керек?</span>
+      <ul class="tidy"><li><b>Табиғат үшін:</b> аз энергия – аз көмір, таза ауа, сақталған су.</li>
+      <li><b>Ел үшін:</b> электр желілеріне жүктеме азаяды, энергия тапшылығы мен апат қаупі төмендейді.</li>
+      <li><b>Отбасы үшін:</b> коммуналдық төлем азаяды.</li>
+      <li><b>Заң:</b> ҚР-да 2012 жылдан «Энергия үнемдеу және энергия тиімділігін арттыру туралы» Заң қолданылады.</li></ul></div>
+    <div class="card sky"><span class="tag b">💡 Білесің бе?</span>
+      <ul class="tidy"><li>LED шам қыздыру шамына қарағанда <b>шамамен 80–90%</b> аз электр жұмсайды және 15–25 есе ұзақ жанады.</li>
+      <li>Розеткада қалған зарядтағыш пен «күту режиміндегі» техника үйдегі электрдің <b>5–10%-ын</b> «жеп» қояды.</li>
+      <li>Энергия тиімділік белгісі (A…G) – құрылғыны таңдағанда қарайтын «паспорт».</li></ul></div>
+    <div class="card red"><span class="tag r">🔥 Жылу да – энергия</span>
+      <ul class="tidy"><li>Терезе саңылауларынан үйдің жылуының едәуір бөлігі шығып кетеді – қыста саңылауды жабу керек.</li>
+      <li>Батареяны перде, жиһазбен жаппа – жылу бөлмеге таралмайды.</li>
+      <li>Ыстық суды үнемдеу – оны жылытуға кеткен газ бен электрді де үнемдеу.</li></ul></div>
+  </div>
+  <div class="card leaf" style="margin-top:16px"><b>🧩 Тірек ұғым – «Саналы таңдау»:</b> энергияны үнемдеу – тыйым емес, ақылмен таңдау. Мен шамды сөндіремін, себебі табиғатты, отбасымды және Қазақстанның болашағын ойлаймын.</div>
+</section>
+
+<!-- ARENA -->
+<section class="view" id="v-arena">
+  <h2>🧠 Зияткерлік алаң</h2>
+  <p class="note">Сынып 2 командаға бөлінеді: «Күн ☀️» және «Жел 🌬️». Әр раунд үшін ұпай жинайды.</p>
+  <div class="card" style="margin-bottom:14px"><b>Ұпай тақтасы:</b>
+    <div class="grid g2" id="board" style="margin-top:10px"></div></div>
+  <div class="grid g2">
+    <div class="card sun"><span class="tag y">1-раунд · «Ойлан, тап!»</span>
+      <div id="riddles"></div></div>
+    <div class="card calc"><span class="tag">2-раунд · «Энергия калькуляторы»</span>
+      <label>Құрылғы</label><select id="dev"></select>
+      <div class="grid g2" style="gap:10px"><div><label>Қуаты, Вт</label><input id="pw" type="number" min="1"></div><div><label>Күніне, сағат</label><input id="hr" type="number" min="0" step="0.5" value="4"></div></div>
+      <label>1 кВт·сағ бағасы, теңге (өз аймағыңыздың тарифін жазыңыз)</label><input id="tar" type="number" value="25" min="1">
+      <div class="out" id="cout"></div>
+      <p class="note">Формула: Қуат (Вт) × Сағат ÷ 1000 = кВт·сағ. Айлық = күндік × 30.</p></div>
+  </div>
+  <div class="card sky" style="margin-top:16px"><span class="tag b">3-раунд · «Энергия детективі»</span>
+    <p>Суреттегі жағдайдан ысырапты тауып, шешім ұсын. Әр дұрыс табылған «ұрлық» – 1 ұпай.</p>
+    <div id="detect" class="grid g2"></div></div>
+</section>
+
+<!-- TASKS -->
+<section class="view" id="v-tasks">
+  <h2>🛠️ Тапсырмалар</h2>
+  <div class="grid">
+    <div class="card"><span class="tag">1-тапсырма · Топтық жұмыс · 4 мин</span>
+      <h3>«Мектептің энергетикалық аудиті»</h3>
+      <p>Әр топ мектептің бір саласын «тексереді»: <b>1-топ «Күн» – Жарық және техника</b> (шамдар, компьютерлер, проектор, зарядтағыштар), <b>2-топ «Жел» – Жылу және су</b> (терезе, батарея, есік, су шүмектері, ыстық су). Тапсырма: сол саладағы 4 ысырап көзін анықта, әрқайсысына нақты шешім ұсын және «кім жауапты?» деген бағанды толтыр.</p>
+      <p class="note">Үлгі қатар (1-топ):</p><table class="k"><tr><th>Ысырап көзі</th><th>Шешім</th><th>Жауапты</th><th>Нәтиже</th></tr><tr><td>Бос сыныпта жанып тұрған шам</td><td>«Соңғы шыққан – сөндіреді» ережесі, кезекші</td><td>Сынып кезекшісі</td><td>Күніне ~1–2 кВт·сағ</td></tr></table>
+      <p><b>Дескриптор:</b> • 4 ысырап көзін анықтайды; • әрқайсысына орындалатын шешім ұсынады; • жауаптыны белгілейді; • нәтижені болжайды.</p></div>
+    <div class="card sun"><span class="tag y">2-тапсырма · Жұптық жұмыс · 3 мин</span>
+      <h3>«Есепте де, үнемде!»</h3>
+      <p>Жұптар «Зияткерлік алаңдағы» калькуляторды пайдаланып, <b>үйдегі 3 құрылғының</b> айлық шығынын есептейді. Сосын: «Егер 1 сағатқа аз қолдансақ / LED-ке ауыстырсақ – айына қанша кВт·сағ және теңге үнемделеді?» Нәтижені «Үнемдеу картасына» жазады.</p>
+      <p><b>Мысал:</b> 75 Вт қыздыру шамы × 5 сағ × 30 күн = 11,25 кВт·сағ. LED (9 Вт) = 1,35 кВт·сағ. Үнем: ≈ <b>9,9 кВт·сағ</b> бір шамнан!</p>
+      <p><b>Дескриптор:</b> • формуланы дұрыс қолданады; • 3 құрылғыны есептейді; • үнемді кВт·сағ және теңгемен көрсетеді; • жұбымен келісіп, қорытынды жасайды.</p></div>
+    <div class="card leaf"><span class="tag g">3-тапсырма · Топтық жоба · 3 мин + қорғау</span>
+      <h3>«Қазақстан – 2060: менің саналы таңдауым»</h3>
+      <p>Екі топ бір энергия көзін алады: <b>1-топ – ☀️ Күн энергиясы</b>, <b>2-топ – 🌬️ Жел энергиясы</b> және <b>SWOT-талдау</b> жасайды: артықшылығы, кемшілігі, мүмкіндігі, қаупі. Соңында Қазақстан жастарына арналған <b>1 ұран</b> мен <b>1 нақты бастама</b> (мысалы, «Сенбі – розеткасыз сағат») ұсынады.</p>
+      <p><b>Дескриптор:</b> • SWOT-тың 4 бөлігін толтырады; • Қазақстан мысалын келтіреді; • ұран мен бастама ұсынады; • 1 минутта қорғайды; • қарсы топқа 1 сұрақ қояды.</p></div>
+  </div>
+  <div class="card" style="margin-top:14px"><b>Бағалау:</b> «Екі жұлдыз, бір тілек» – екі топ бір-біріне 2 мақтау және 1 ұсыныс айтады. Үздік бастамалар сынып бұрышындағы «Энергия сақшысы» плакатына жазылады.</div>
+</section>
+
+<!-- GAMES -->
+<section class="view" id="v-games">
+  <h2>🎮 Онлайн ойындар</h2>
+  <p class="note">Оқушылар телефоннан немесе интерактивті тақтадан ойнайды. Нәтиже бірден көрінеді.</p>
+  <div class="grid g2">
+    <div class="card"><span class="tag">1-ойын · «Энергия викторинасы»</span><div id="quiz"></div></div>
+    <div class="card"><span class="tag y">2-ойын · «Үнемдеу ме, ысырап па?»</span>
+      <p class="note">Әрекетті бас, сосын тиісті себетті бас.</p>
+      <div id="pool"></div>
+      <div class="bins"><div class="bin s" data-b="1"><b>🌿 Үнемдеу</b><div></div></div><div class="bin w" data-b="0"><b>🔥 Ысырап</b><div></div></div></div>
+      <p id="sortres" class="score"></p><button class="btn ghost" onclick="initSort()">Қайта бастау</button></div>
+    <div class="card"><span class="tag g">3-ойын · «Шын ба, жалған ба?»</span><div id="tf"></div></div>
+    <div class="card"><span class="tag r">4-ойын · «Нөмірді тап»</span><p class="note">Жағдаятқа сәйкес нөмірді таңда.</p><div id="numg"></div></div>
+  </div>
+</section>
+
+<!-- SAFETY -->
+<section class="view" id="v-safety">
+  <h2>🆘 Қауіпсіздік сабағы (10 минут)</h2>
+  <div class="card red"><span class="tag r">Тақырып</span>
+    <h3 style="margin-bottom:4px">«Қазақстандағы сенім телефондарының және шұғыл қызметтердің нөмірлері»</h3>
+    <p style="margin:0"><b>Мақсаты:</b> оқушылардың шұғыл және сенім қызметтерінің нөмірлерін біліп, жағдайға қарай дұрыс қызметті таңдау және көмекке сауатты жүгіну дағдыларын қалыптастыру.</p></div>
+  <div class="card sun" style="margin-top:14px"><b>Жағдаят (2 мин):</b> Қыс. Подъезде электр қалқанынан ұшқын шығып, түтін иісі шықты, ал баспалдақта көрші ата құлап, есінен танып жатыр. Жарық өшіп қалды. Сен қай нөмірге, қандай ретпен хабарласасың?
+    <button class="btn y" style="margin-top:8px" onclick="document.getElementById('r9').classList.add('on')">Талдау</button>
+    <div class="reveal" id="r9">1) Өзіңнің қауіпсіздігіңді сақта – ұшқын шыққан қалқанға жақындама. 2) <b>101</b> (өрт/электр) немесе <b>112</b> – бір қоңырауда бәрін айт. 3) <b>103</b> – атаға жедел жәрдем. 4) Ересектерді, көршілерді шақыр. Энергия мен қауіпсіздік – бір-бірімен байланысты!</div></div>
+  <h3 style="margin-top:18px">Негізгі нөмірлер</h3>
+  <div class="grid g4">
+    <div class="numcard n101"><b>101</b><span>Өрт сөндіру қызметі</span></div>
+    <div class="numcard n102"><b>102</b><span>Полиция</span></div>
+    <div class="numcard n103"><b>103</b><span>Жедел медициналық жәрдем</span></div>
+    <div class="numcard n104"><b>104</b><span>Газ қызметі (газдың иісі)</span></div>
+    <div class="numcard n112"><b>112</b><span>Бірыңғай құтқару қызметі</span></div>
+    <div class="numcard n111"><b>111</b><span>Отбасы, әйелдер және балалар құқығы бойынша байланыс орталығы (тәулік бойы, анонимді)</span></div>
+    <div class="numcard n150"><b>150</b><span>Балалар мен жастарға арналған сенім телефоны (анонимді)</span></div>
+    <div class="numcard" style="background:linear-gradient(135deg,#334155,#1e293b)"><b>📵</b><span>Шұғыл нөмірлерге қоңырау шалу – тегін</span></div>
+  </div>
+  <h3 style="margin-top:18px">Алгоритм: «БАҒАЛА – ТАҢДА – ХАБАРЛА – ҚАУІПСІЗ БОЛ»</h3>
+  <div class="algo"><div><b>Бағала</b><br>Не болды? Өмірге қауіп бар ма?</div><div><b>Таңда</b><br>Қай қызмет керек? Білмесең – 112.</div><div><b>Хабарла</b><br>Кім? Не болды? Қайда (мекенжай)? Қанша адам? Нөмірің.</div><div><b>Қауіпсіз бол</b><br>Тұтқаны бірінші қойма, нұсқауды орында, ересекке айт.</div></div>
+  <div class="grid g2" style="margin-top:16px">
+    <div class="card"><span class="tag">💬 Сенім телефоны – қашан?</span>
+      <ul class="tidy"><li>Қысым, буллинг, қорқыту, жалғыздық сезімі.</li><li>Отбасындағы зорлық немесе бала құқығының бұзылуы.</li><li>Кімге айтарыңды білмейтін кез – <b>111</b> немесе <b>150</b>. Есіміңді айтпауға болады.</li></ul></div>
+    <div class="card"><span class="tag r">⚡ Электр қауіпсіздігі – энергияның екінші жағы</span>
+      <ul class="tidy"><li>Токқа түскен адамға қолмен тиме! Алдымен токты ажырат (автомат), құрғақ ағашпен итер – 103/112.</li><li>Үзілген сымнан 8–10 метр алыс жүр – 101/112.</li><li>Газдың иісі – жарық қоспа, от жақпа, терезе аш, сыртқа шығып – 104.</li></ul></div>
+  </div>
+  <div class="card leaf" style="margin-top:14px"><b>Практикалық жаттығу «Диспетчер» (3 мин):</b> жұптар рөлге бөлінеді – бірі «диспетчер», бірі «қоңырау шалушы». Жағдаят карточкасы бойынша 30 секундта нақты хабарлама жасайды: <i>кім, не, қайда, қанша адам</i>. Сосын рөл ауысады.<br><b>Педагог қорытындысы:</b> Дұрыс нөмір мен нақты сөз – өмірді сақтайтын минуттар. Нөмірлерді біл, үйдегілерге де үйрет.</div>
+  <div class="vids card" style="margin-top:14px">
+    <a href="https://www.youtube.com/channel/UC9Lk8S70ytRKyV2zahIHUSg" target="_blank" rel="noopener"><span class="pl">▶</span><span><b>ҚР ТЖМ ресми YouTube арнасы</b><br><span class="note">Шұғыл жағдайдағы әрекеттер туралы бейнесабақтар</span></span></a>
+    <a href="https://www.youtube.com/results?search_query=111+%D0%B1%D0%B0%D0%B9%D0%BB%D0%B0%D0%BD%D1%8B%D1%81+%D0%BE%D1%80%D1%82%D0%B0%D0%BB%D1%8B%D2%93%D1%8B+%D0%B1%D0%B0%D0%BB%D0%B0%D0%BB%D0%B0%D1%80+%D2%9B%D2%B1%D2%9B%D1%8B%D2%93%D1%8B" target="_blank" rel="noopener"><span class="pl">▶</span><span><b>111 байланыс орталығы туралы</b><br><span class="note">Бейнесюжеттер</span></span></a>
+  </div>
+</section>
+
+<!-- REFLECT -->
+<section class="view" id="v-reflect">
+  <h2>🔋 Рефлексия: «Менің энергия батареям»</h2>
+  <div class="card"><p>Бүгінгі сабақтан кейін сенің «батареяң» қаншалықты толды?</p>
+    <div class="mood" id="mood"></div>
+    <div style="margin-top:14px"><b>Сөйлемді аяқта:</b>
+      <ul class="tidy"><li>Бүгін мен ... екенін түсіндім.</li><li>Ертеңнен бастап мен ... үнемдеймін.</li><li>Қауіпті жағдайда мен ... нөміріне хабарласамын.</li></ul>
+      <textarea id="refltxt" placeholder="Ойыңды осында жаз..."></textarea>
+      <button class="btn" style="margin-top:8px" onclick="saveRefl()">Сақтау</button> <span id="rsaved" class="note"></span></div></div>
+  <div class="card sun" style="margin-top:14px"><b>Шығу билеті:</b> стикерге «Менің бір апталық энергия уәдем: ...» деп жазып, сынып есігіндегі «Энергия ағашына» жапсыр.</div>
+</section>
+
+<!-- HW -->
+<section class="view" id="v-hw">
+  <h2>🏡 Үй тапсырмасы (деңгейлік)</h2>
+  <div class="grid g3">
+    <div class="card leaf"><span class="tag g">A деңгей</span><h3>«Отбасылық энергия апталығы»</h3><p>7 күн бойы үйдегі электр есептегішінің көрсеткішін жазып, отбасымен бірге 3 үнемдеу ережесін енгіз. Апта соңында айырманы есепте.</p></div>
+    <div class="card sun"><span class="tag y">B деңгей</span><h3>«Үнемдеу жадынамасы»</h3><p>Кіші сыныптарға арналған 6 кеңестен тұратын жадынама/буклет жаса (сурет, ұран, QR-код қосуға болады).</p></div>
+    <div class="card sky"><span class="tag b">C деңгей</span><h3>«Саналы таңдау» медиа-посты</h3><p>Энергия үнемдеу туралы 30–60 секундтық бейне немесе пост дайында: #ҮнемдеБолашақҮшін.</p></div>
+  </div>
+  <div class="card red" style="margin-top:14px"><b>Барлығына:</b> шұғыл нөмірлер карточкасын (101, 102, 103, 104, 112, 111, 150) жасап, үйдегі көрнекі жерге іл және бауырларыңа түсіндір.</div>
+</section>
+
+<!-- EBBK -->
+<section class="view" id="v-ebbk">
+  <h2>🤝 ЕББҚ оқушысына арналған тапсырма</h2>
+  <div class="card"><h3>«Жарық сөндіргіш» суретті ойыны</h3>
+    <p>Оқушыға 6 суретті карточка беріледі (жанып тұрған шам бос бөлмеде, ашық су шүмегі, розеткадағы зарядтағыш, сөндірілген теледидар, жабық терезе, күн батареясы). Ол «Дұрыс 👍» және «Бұрыс 👎» деген екі қорапқа сұрыптайды.</p>
+    <p><b>Қауіпсіздік бөлігі:</b> «112» нөмірі жазылған үлкен карточканы көрсетіп, «Қауіп болса – ересекке айтамын, 112-ге хабарласамын» сөзін тьютормен бірге қайталайды.</p>
+    <p class="note">Қолдау: үлкен шрифт, суреттер, тьютор/жұппен жұмыс, уақыт шектелмейді, әр қадам мадақталады.</p>
+    <div id="ebbkg"></div></div>
+</section>
+
+<!-- QMZH -->
+<section class="view" id="v-qmzh">
+  <h2>📄 Қысқа мерзімді жоспар (ҚМЖ)</h2>
+  <div class="noprint" style="margin-bottom:10px"><span class="note">Толық ҚМЖ Word форматында бөлек жіберілді. Мұнда – сайттағы нұсқасы.</span></div>
+  <div id="qmzhbox"></div>
+</section>
+<footer>Тәрбие сағаты · 9-сынып · «Адал азамат» біртұтас тәрбие бағдарламасы аясында · Bilim Hub</footer>
+</main>
+</div>
+<script>
+const $=s=>document.querySelector(s);
+function esc(s){return String(s).replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]))}
+/* routing */
+const views=['home','start','know','arena','tasks','games','safety','reflect','hw','ebbk','qmzh'];
+function route(){let h=(location.hash||'#home').slice(1);if(!views.includes(h))h='home';
+document.querySelectorAll('.view').forEach(v=>v.classList.toggle('on',v.id==='v-'+h));
+document.querySelectorAll('#nav a').forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+h));
+document.getElementById('side').classList.remove('open');window.scrollTo(0,0)}
+addEventListener('hashchange',route);
+/* timer */
+let left=300,run=false,iv=null;function show(){$('#tt').textContent=String(Math.floor(left/60)).padStart(2,'0')+':'+String(left%60).padStart(2,'0')}
+document.querySelectorAll('.timer [data-m]').forEach(b=>b.onclick=()=>{left=b.dataset.m*60;show()});
+$('#tgo').onclick=()=>{run=!run;clearInterval(iv);if(run)iv=setInterval(()=>{if(left>0){left--;show()}else{clearInterval(iv);run=false;$('#tt').textContent='⏰ 00:00'}},1000)};
+/* scoreboard */
+const teams=[['☀️ Күн',0],['🌬️ Жел',0]];
+function board(){$('#board').innerHTML=teams.map((t,i)=>`<div class="card" style="text-align:center;padding:12px"><b>${t[0]}</b><div class="stat" style="margin:6px 0">${t[1]}</div><button class="btn" onclick="teams[${i}][1]++;board()">+1</button> <button class="btn ghost" onclick="teams[${i}][1]=Math.max(0,teams[${i}][1]-1);board()">−1</button></div>`).join('')}
+/* riddles */
+const RID=[["Неліктен тоңазытқышты пештің немесе батареяның жанына қоймайды?","Ол сыртқы жылуды «жеңу» үшін көбірек жұмыс істеп, артық электр жұмсайды. Қабырғадан 10 см қашық, салқын жерге қойған дұрыс."],
+["Шәйнекке неге тек керек мөлшерде ғана су құю керек?","Артық суды да қайнатуға энергия жұмсалады. 1 кесе шай үшін – 1 кесе су."],
+["Телефон толық зарядталды, бірақ зарядтағыш розеткада қалды. Неге бұл – «жасырын ұры»?","Зарядтағыш бос тұрғанда да аздап ток тұтынады және қызады. Мыңдаған үйде бұл – үлкен шығын әрі өрт қаупі."],
+["Қыста терезені ұзақ уақыт жартылай ашып қоюдың орнына не тиімдірек?","5–10 минут кең ашып, тез желдету. Сонда ауа тазарады, ал қабырға мен жиһаз суып қалмайды."],
+["Күн мен жел станциялары неге көмір станциясын бірден толық алмастыра алмайды?","Күн мен жел ауа райына тәуелді, сондықтан энергияны сақтау жүйелері мен желіні дамыту керек. Бұл – біртіндеп, саналы көшу."]];
+function riddles(){$('#riddles').innerHTML=RID.map((r,i)=>`<div style="margin:10px 0"><b>${i+1}. ${esc(r[0])}</b><br><button class="btn ghost" style="margin-top:6px;padding:6px 12px" onclick="this.nextElementSibling.classList.toggle('on')">Жауабы</button><div class="reveal">${esc(r[1])}</div></div>`).join('')}
+/* calc */
+const DEV=[["Қыздыру шамы",75],["LED шам",9],["Тоңазытқыш (орташа)",60],["Теледидар",100],["Ноутбук",60],["Электр шәйнек",2000],["Кір жуғыш машина",2000],["Шаңсорғыш",1600],["Ойын компьютері",400],["Телефон зарядтағышы",10],["Үтік",2200],["Электр жылытқыш",1500]];
+function calc(){const p=+$('#pw').value||0,h=+$('#hr').value||0,t=+$('#tar').value||0;const d=p*h/1000,m=d*30;
+$('#cout').innerHTML=`Күніне: <b>${d.toFixed(2)}</b> кВт·сағ<br>Айына: <b>${m.toFixed(1)}</b> кВт·сағ ≈ <b>${Math.round(m*t)}</b> ₸<br><span style="opacity:.85;font-size:13px">1 сағатқа аз қолдансаң, айына ${(p/1000*30).toFixed(1)} кВт·сағ (≈ ${Math.round(p/1000*30*t)} ₸) үнемдейсің.</span>`}
+/* detective */
+const DET=[["🏫 Үзілісте бос сыныпта 12 шам мен проектор жанып тұр.","Шығарда сөндір; проекторды «күту» режимінде қалдырма; кезекші тағайында."],
+["🚿 Тіс жуғанда шүмек 2 минут бойы ашық тұр.","Шүмекті жап, стақан қолдан. Ыстық су – жылуға кеткен энергия."],
+["🪟 Батарея қатты ысып тұр, ал терезе күні бойы ашық.","Тез желдету (5–10 мин), саңылауды жабу, батарея реттегішін бұрау."],
+["📺 Түнде теледидар мен приставканың қызыл шамы жанып тұр.","Ұзартқышты (сөндіргіші бар) толық өшір."],
+["🧊 Тоңазытқыштың есігін ашып, не жейтінін ұзақ ойлап тұр.","Не алатыныңды алдын ала ойла; есікті тез жап."],
+["💡 Дәлізде күндіз де шам жанып тұр.","Табиғи жарықты пайдалан, қозғалыс датчигі бар шам орнат."]];
+function detect(){$('#detect').innerHTML=DET.map(d=>`<div class="card" style="padding:14px"><div>${esc(d[0])}</div><button class="btn y" style="margin-top:8px;padding:6px 12px" onclick="this.nextElementSibling.classList.toggle('on')">Шешімі</button><div class="reveal">${esc(d[1])}</div></div>`).join('')}
+/* quiz */
+const QZ=[["Халықаралық энергия үнемдеу күні қашан аталады?",["11 қараша","22 наурыз","5 маусым","1 қазан"],0],
+["Қазақстанда электр энергиясының басым бөлігі неден өндіріледі?",["Көмір","Жел","Күн","Атом"],0],
+["2025 жылы ЖЭК үлесі шамамен қанша болды?",["7%","50%","25%","1%"],0],
+["Қазақстан 2030 жылға қарай ЖЭК үлесін қаншаға жеткізуді көздейді?",["15%","3%","90%","100%"],0],
+["Ең аз электр жұмсайтын шам:",["LED","Қыздыру шамы","Галоген","Бәрі бірдей"],0],
+["75 Вт шам күніне 4 сағат жанса, айына қанша кВт·сағ?",["9 кВт·сағ","300 кВт·сағ","0,3 кВт·сағ","90 кВт·сағ"],0],
+["Жаңартылатын энергия көзі:",["Жел","Мұнай","Көмір","Газ"],0],
+["Энергия тиімділігі ең жоғары класс:",["A","D","F","G"],0]];
+let qi=0,qs=0;function shuffle(a){return a.map(v=>[Math.random(),v]).sort((x,y)=>x[0]-y[0]).map(v=>v[1])}
+function quiz(){const box=$('#quiz');if(qi>=QZ.length){box.innerHTML=`<p class="score">Нәтиже: ${qs} / ${QZ.length} ${qs>=7?'🏆 Энергия сақшысы!':qs>=5?'⚡ Жарайсың!':'🌱 Тағы байқап көр!'}</p><button class="btn" onclick="qi=0;qs=0;quiz()">Қайта ойнау</button>`;return}
+const q=QZ[qi];const opts=shuffle(q[1].map((t,i)=>[t,i===q[2]]));
+box.innerHTML=`<div class="progress"><i style="width:${qi/QZ.length*100}%"></i></div><b>${qi+1}. ${esc(q[0])}</b>`+opts.map(o=>`<button class="opt" data-ok="${o[1]}">${esc(o[0])}</button>`).join('');
+box.querySelectorAll('.opt').forEach(b=>b.onclick=()=>{const ok=b.dataset.ok==='true';if(ok)qs++;box.querySelectorAll('.opt').forEach(x=>{x.disabled=true;if(x.dataset.ok==='true')x.classList.add('ok')});if(!ok)b.classList.add('no');setTimeout(()=>{qi++;quiz()},900)})}
+/* sort */
+const SRT=[["Бөлмеден шыққанда шамды сөндіру",1],["Зарядтағышты розеткада қалдыру",0],["LED шам орнату",1],["Шәйнекті толтырып қайнату",0],["Кір машинасын толық жүктеп жуу",1],["Теледидарды «күту» режимінде қалдыру",0],["Күндіз перде ашып, табиғи жарықты пайдалану",1],["Тоңазытқыш есігін ұзақ ашық ұстау",0],["Батареяны жиһазбен жабу",0],["А класты техника таңдау",1]];
+let sel=null,sc=0,done=0;function initSort(){sel=null;sc=0;done=0;$('#sortres').textContent='';document.querySelectorAll('.bin div').forEach(d=>d.innerHTML='');
+$('#pool').innerHTML=shuffle(SRT).map(s=>`<span class="chip" data-v="${s[1]}">${esc(s[0])}</span>`).join('');
+$('#pool').querySelectorAll('.chip').forEach(c=>c.onclick=()=>{document.querySelectorAll('#pool .chip').forEach(x=>x.classList.remove('sel'));c.classList.add('sel');sel=c})}
+document.querySelectorAll('.bin').forEach(b=>b.onclick=()=>{if(!sel)return;const ok=sel.dataset.v===b.dataset.b;sel.classList.remove('sel');sel.classList.add(ok?'ok':'no');if(ok)sc++;done++;b.querySelector('div').appendChild(sel);sel.onclick=null;sel=null;
+if(done===SRT.length)$('#sortres').textContent=`Нәтиже: ${sc} / ${SRT.length} ${sc===SRT.length?'🌿 Тамаша!':''}`})
+/* true-false */
+const TF=[["LED шам қыздыру шамынан көп электр жұмсайды.",false],["Розеткадағы бос зарядтағыш та ток тұтынады.",true],["Күн мен жел – жаңартылатын энергия көздері.",true],["Газдың иісі шықса, жарықты қосып тексеру керек.",false],["112 – бірыңғай құтқару қызметінің нөмірі.",true],["Сенім телефонына қоңырау шалғанда атыңды міндетті түрде айту керек.",false]];
+let ti=0,ts=0;function tf(){const box=$('#tf');if(ti>=TF.length){box.innerHTML=`<p class="score">Нәтиже: ${ts} / ${TF.length}</p><button class="btn" onclick="ti=0;ts=0;tf()">Қайта ойнау</button>`;return}
+box.innerHTML=`<div class="progress"><i style="width:${ti/TF.length*100}%"></i></div><p><b>${esc(TF[ti][0])}</b></p><button class="btn" style="background:var(--leaf)" data-a="1">✔ Шын</button> <button class="btn" style="background:var(--red)" data-a="0">✘ Жалған</button><p id="tfm"></p>`;
+box.querySelectorAll('[data-a]').forEach(b=>b.onclick=()=>{const ok=(b.dataset.a==='1')===TF[ti][1];if(ok)ts++;$('#tfm').innerHTML=ok?'✅ Дұрыс!':'❌ Қате. Дұрыс жауап: '+(TF[ti][1]?'Шын':'Жалған');box.querySelectorAll('[data-a]').forEach(x=>x.disabled=true);setTimeout(()=>{ti++;tf()},1100)})}
+/* numbers game */
+const NG=[["Ас үйде газдың өткір иісі шықты.","104"],["Үйдің электр қалқанынан от шықты.","101"],["Сыныптасың құлап, басын қатты соғып, есінен танды.","103"],["Подъезде бейтаныс адам біреуге қорқытып ақша талап етіп жатыр.","102"],["Тауда адасып қалдыңдар, қай қызмет екенін білмейсің.","112"],["Сені әлеуметтік желіде ұзақ уақыт қорлап, қысым көрсетіп жүр, кімге айтарыңды білмейсің.","111"],["Көңіл-күйің өте нашар, біреумен анонимді сөйлескің келеді.","150"],["Көшеде үзіліп жерге түскен электр сымын көрдің.","112"]];
+const NUMS=["101","102","103","104","112","111","150"];let ni=0,ns=0;
+function numg(){const box=$('#numg');if(ni>=NG.length){box.innerHTML=`<p class="score">Нәтиже: ${ns} / ${NG.length}</p><p class="note">Ескерту: кейбір жағдайда бірнеше нөмір дұрыс болуы мүмкін (мысалы, кез келген төтенше жағдайда 112 көмектеседі).</p><button class="btn" onclick="ni=0;ns=0;numg()">Қайта ойнау</button>`;return}
+box.innerHTML=`<div class="progress"><i style="width:${ni/NG.length*100}%"></i></div><p><b>${esc(NG[ni][0])}</b></p>`+NUMS.map(n=>`<button class="btn ghost" style="margin:3px;min-width:62px" data-n="${n}">${n}</button>`).join('')+'<p id="ngm"></p>';
+box.querySelectorAll('[data-n]').forEach(b=>b.onclick=()=>{const r=NG[ni][1];const ok=b.dataset.n===r||(b.dataset.n==='112'&&['101','103','104'].includes(r));if(ok)ns++;$('#ngm').innerHTML=ok?'✅ Дұрыс!':'❌ Дұрыс жауап: '+r;box.querySelectorAll('[data-n]').forEach(x=>x.disabled=true);setTimeout(()=>{ni++;numg()},1200)})}
+/* ebbk mini game */
+const EB=[["💡 Бос бөлмеде жанып тұрған шам",0],["🚰 Жабық су шүмегі",1],["🔌 Розеткадағы бос зарядтағыш",0],["☀️ Күн батареясы",1]];
+function ebbk(){$('#ebbkg').innerHTML='<p><b>Онлайн нұсқа:</b> дұрыс па, бұрыс па?</p>'+EB.map((e,i)=>`<div style="margin:8px 0;font-size:18px">${e[0]} <button class="btn" style="background:var(--leaf)" onclick="eb(this,${i},1)">👍</button> <button class="btn" style="background:var(--red)" onclick="eb(this,${i},0)">👎</button> <span></span></div>`).join('')}
+function eb(b,i,a){b.parentNode.querySelector('span').textContent=EB[i][1]===a?'🌟 Жарайсың!':'🙂 Тағы ойлан'}
+/* mood */
+const MD=[["25%","#c8472f","Әлі де түсінбеген жерім бар"],["50%","#f49b00","Біраз түсіндім"],["75%","#2b6cb0","Жақсы түсіндім"],["100%","#2e9a57","Толық зарядталдым!"]];
+function mood(){let saved=null;try{saved=localStorage.getItem('en9_mood')}catch(e){}
+$('#mood').innerHTML=MD.map((m,i)=>`<button data-i="${i}" class="${saved==i?'on':''}" style="color:${m[1]}"><div class="bat"><i style="width:calc(${m[0]} - 6px);background:${m[1]}"></i></div>${m[0]}<br><span style="color:var(--ink);font-weight:600;font-size:13px">${m[2]}</span></button>`).join('');
+$('#mood').querySelectorAll('button').forEach(b=>b.onclick=()=>{$('#mood').querySelectorAll('button').forEach(x=>x.classList.remove('on'));b.classList.add('on');try{localStorage.setItem('en9_mood',b.dataset.i)}catch(e){}})
+try{$('#refltxt').value=localStorage.getItem('en9_refl')||''}catch(e){}}
+function saveRefl(){try{localStorage.setItem('en9_refl',$('#refltxt').value);$('#rsaved').textContent='✔ Сақталды'}catch(e){$('#rsaved').textContent='Сақтау мүмкін болмады, бірақ ойың маңызды!'}}
+/* QMZH */
+const QM={"head": [["Тәрбие сағаты", "9-сынып · 16.11.2026 · «Адал азамат» біртұтас тәрбие бағдарламасы · Құндылық: Әділдік және жауапкершілік"], ["Сынып жетекші", "______________________   Қатысқандар: ___   Қатыспағандар: ___"], ["Тақырыбы", "«Энергияны үнемдеу – Қазақстанның болашағы үшін саналы таңдау»"], ["Қауіпсіздік сабағы (10 мин)", "«Қазақстандағы сенім телефондарының және шұғыл қызметтердің нөмірлері»"], ["Мақсаты", "Оқушылардың энергияны тиімді пайдалану мәдениетін және оның Қазақстанның болашағы үшін саналы таңдау екенін түсінуін қалыптастыру; табиғатқа жанашырлық, жауапкершілік және ұқыптылық сезімдерін дамыту; экологиялық қауіпсіз өмір салтын ұстануға тәрбиелеу. Қауіпсіздік бөлігінде – шұғыл және сенім қызметтеріне сауатты жүгіну дағдысын қалыптастыру."], ["Күтілетін нәтиже", "Біледі: энергия көздерін, ҚР энергетикасының ахуалын (көмір үлесі ≈ ⅔, ЖЭК 2025 ж. – 7%, 2030 ж. мақсаты – 15%), шұғыл нөмірлерді.\nТүсінеді: әр үнемделген кВт·сағ – табиғатқа, отбасы бюджетіне және ел болашағына үлес екенін.\nҚолданады: құрылғы шығынын есептеп, үнемдеу жоспарын құрады; қауіпті жағдайда тиісті қызметке нақты хабарлайды."], ["Әдіс-тәсілдер", "Проблемалық сұрақ, «Энергия тізбегі», мини-дәріс, зияткерлік алаң (2 команда сайысы), энергетикалық аудит, SWOT, «Диспетчер» рөлдік ойыны, онлайн ойындар, «Екі жұлдыз, бір тілек»."], ["Апта дәйексөзі", "«Тамшыдан теңіз құралады» (мақал). 11 қараша – Халықаралық энергия үнемдеу күні."]], "rows": [["Басы\n(5 мин)", "1. Ұйымдастыру. «Энергия тізбегі»: шеңберде «ток» өткізіп, әр оқушы энергияны қайда үнемдейтінін бір сөзбен айтады.\n2. Кіріспе бейне (2 мин).\n3. Проблемалық сұрақ: «Бір шамды бір сағатқа сөндірсем – не өзгереді?» 1 млн отбасы × 60 Вт × 1 сағ = күніне 60 000 кВт·сағ, жылына ≈ 21,9 млн кВт·сағ.", "Шеңберге тұрып жаттығуға қатысады, бейнені талдайды, есептеп, болжам айтады.", "Ауызша мадақтау", "Сайт: «Ой қозғау», бейнероликтер"], ["Ортасы\n(22 мин)", "«Білім қоржыны» (6 мин): дәстүрлі және жаңартылатын энергия көздері; ҚР-да электрдің басым бөлігі көмірден; ЖЭК үлесі 2025 ж. – 7%, мақсат 2030 ж. – 15%; 2060 ж. көміртегі бейтараптығы; 2012 ж. «Энергия үнемдеу және энергия тиімділігін арттыру туралы» Заң; LED шам ≈ 80–90% аз жұмсайды; «күту режимі» – 5–10% жасырын шығын.\nЗияткерлік алаң (6 мин): Сынып 2 командаға бөлінеді: «Күн» және «Жел». 1-раунд «Ойлан, тап!» (логикалық сұрақтар); 2-раунд «Энергия калькуляторы» (Қуат × Сағат ÷ 1000); 3-раунд «Энергия детективі» (6 жағдаяттан ысырапты табу). Ұпай тақтасы – сайтта.\n1-тапсырма (топтық, 2 топ) «Мектептің энергетикалық аудиті»: 1-топ «Күн» – Жарық және техника; 2-топ «Жел» – Жылу және су. Әр топ: 4 ысырап көзі, шешім, жауапты, нәтиже.\n2-тапсырма (жұптық) «Есепте де, үнемде!»: үйдегі 3 құрылғының айлық шығыны және LED/1 сағат аз қолдану арқылы үнем (кВт·сағ, ₸).\n3-тапсырма (топтық, 2 топ) «Қазақстан – 2060: менің саналы таңдауым»: 1-топ – Күн энергиясы, 2-топ – Жел энергиясы бойынша SWOT, жастарға ұран және 1 нақты бастама; топтар бір-біріне 1 сұрақ қояды.", "Тыңдайды, сұрақ қояды; командамен сұрақтарға жауап береді, калькулятормен есептейді; аудит кестесін толтырады; жұппен есептеп, «Үнемдеу картасына» жазады; SWOT жасап, 1 минутта қорғайды.", "Дескрипторлар:\n1-т.: 4 ысырап көзі; шешім; жауапты; нәтиже.\n2-т.: формуланы қолданады; 3 құрылғы; үнем кВт·сағ және ₸.\n3-т.: SWOT 4 бөлігі; ҚР мысалы; ұран+бастама; қарсы топқа сұрақ.\n«Екі жұлдыз, бір тілек»", "Сайт: «Білім қоржыны», «Зияткерлік алаң», «3 тапсырма»; А3 қағаз, маркер, стикер"], ["Қауіпсіздік сабағы\n(10 мин)", "Жағдаят: подъезде электр қалқанынан ұшқын, түтін; көрші ата есінен танды. Кімге, қандай ретпен хабарласасың?\nНөмірлер: 101 – өрт, 102 – полиция, 103 – жедел жәрдем, 104 – газ, 112 – бірыңғай құтқару, 111 – отбасы, әйелдер және балалар құқығы байланыс орталығы (тәулік бойы, анонимді), 150 – балалар мен жастардың сенім телефоны. Шұғыл қоңырау тегін.\nАлгоритм «БАҒАЛА – ТАҢДА – ХАБАРЛА – ҚАУІПСІЗ БОЛ»: кім? не болды? қайда? қанша адам? нөмірің.\nЭлектр қауіпсіздігі: токқа түскенге қолмен тиме – токты ажырат; үзілген сымнан 8–10 м алыс; газ иісінде жарық қоспа.\n«Диспетчер» рөлдік ойыны (жұппен, 30 сек хабарлама). «Нөмірді тап» онлайн ойыны.\nҚорытынды: дұрыс нөмір мен нақты сөз – өмірді сақтайтын минуттар.", "Жағдаятты талдайды, нөмірлерді жағдайға сәйкестендіреді, рөлдік ойында нақты хабарлама құрады.", "Онлайн ойын нәтижесі, өзара бағалау", "Сайт: «Қауіпсіздік сабағы», «Нөмірді тап»; ҚР ТЖМ бейнесабағы"], ["Соңы\n(8 мин)", "Онлайн бекіту: «Энергия викторинасы» (8 сұрақ), «Үнемдеу ме, ысырап па?», «Шын ба, жалған ба?».\nРефлексия «Менің энергия батареям» (25–100%) + сөйлемді аяқтау: «Бүгін мен ... түсіндім», «Ертеңнен ... үнемдеймін», «Қауіпті жағдайда ... хабарласамын». Шығу билеті – «Энергия ағашына» апталық уәде.\nҮй тапсырмасы (деңгейлік): A – «Отбасылық энергия апталығы» (есептегіш көрсеткіші, 3 ереже); B – кіші сыныпқа «Үнемдеу жадынамасы»; C – #ҮнемдеБолашақҮшін медиа-посты. Барлығына – шұғыл нөмірлер карточкасы.", "Ойындарды ойнайды, батарея деңгейін белгілеп, ойын жазады; үй тапсырмасын таңдайды.", "Викторина ұпайы, шығу билеті", "Сайт: «Онлайн ойындар», «Рефлексия», «Үй тапсырмасы»; стикер"]], "tail": [["ЕББҚ оқушысымен жұмыс", "«Жарық сөндіргіш» суретті ойыны: 6 карточканы «Дұрыс 👍 / Бұрыс 👎» қорабына сұрыптау (сайтта онлайн нұсқасы бар). «112» карточкасымен «Қауіп болса – ересекке айтамын, 112-ге хабарласамын» сөзін тьютормен қайталау. Қолдау: үлкен шрифт, сурет, жұппен жұмыс, уақыт шектелмейді."], ["Пәнаралық байланыс", "Физика (қуат, электр энергиясы), география (ЖЭК, ҚР аймақтары), математика (есептеу), экология."], ["Сынып жетекшінің рефлексиясы", "Мақсатқа жеттік пе? ________  Не жақсы өтті? ________  Нені өзгертемін? ________"]]};
+function qmzh(){let h='<table class="k">';QM.head.forEach(r=>h+=`<tr><td class="l">${esc(r[0])}</td><td>${esc(r[1]).replace(/\n/g,'<br>')}</td></tr>`);h+='</table><h3 style="margin-top:16px">Сабақтың барысы</h3><table class="k"><tr><th>Кезең, уақыт</th><th>Педагогтің әрекеті</th><th>Оқушының әрекеті</th><th>Бағалау</th><th>Ресурстар</th></tr>';
+QM.rows.forEach(r=>h+='<tr>'+r.map((c,i)=>`<td${i==0?' class="l"':''}>${esc(c).replace(/\n/g,'<br>')}</td>`).join('')+'</tr>');h+='</table><table class="k" style="margin-top:14px">';
+QM.tail.forEach(r=>h+=`<tr><td class="l">${esc(r[0])}</td><td>${esc(r[1]).replace(/\n/g,'<br>')}</td></tr>`);$('#qmzhbox').innerHTML=h+'</table>'}
+/* init */
+const dv=$('#dev');dv.innerHTML=DEV.map((d,i)=>`<option value="${i}">${d[0]} (${d[1]} Вт)</option>`).join('');dv.onchange=()=>{$('#pw').value=DEV[dv.value][1];calc()};
+['#pw','#hr','#tar'].forEach(s=>$(s).oninput=calc);$('#pw').value=DEV[0][1];
+board();riddles();calc();detect();quiz();initSort();tf();numg();ebbk();mood();qmzh();show();route();
+</script>
+</body>
+</html>
